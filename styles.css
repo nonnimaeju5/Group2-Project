@@ -25,27 +25,7 @@ header .logo {
   cursor: pointer;
 }
 
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-
-.toggle.active {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-}
-
 .showcase {
-  position: fixed;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -86,12 +66,12 @@ header .logo {
 }
 
 .text h3 {
-  font-size: 4em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 800;
   color: #fff;
   line-height: 1em;
-  text-transform: uppercase;
 }
+
 
 .text p {
   font-size: 1.1em;
@@ -189,6 +169,6 @@ header .logo {
   }
 }
 
-footer {
+.footer {
 
 }
