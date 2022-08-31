@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +45,7 @@ header .logo {
 }
 
 .showcase {
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -185,4 +187,8 @@ header .logo {
   {
     font-size: 2em;
   }
+}
+
+footer {
+
 }
