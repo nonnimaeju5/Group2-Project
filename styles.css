@@ -1,25 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* Basic fundamental properties set to the website */ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
+h1, h2, h3, h4, h5 {
+ font-family: 'Open Sans', sans-serif;;
+}
+
+p
+{ font-size: 18px;}
+/* main centered container  */
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Navigation bar with links inside  */ 
+
 .nav {
-  position: fixed;
-  background-color: #45a1ff;
+  position: absolute;
+  background-color: transparent;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
 }
+
+.logo img {
+  max-width: 175px;
+}
+
 
 .nav .container {
   display: flex;
@@ -28,6 +44,7 @@
   padding: 20px 0;
   transition: all 0.3s ease-in-out;
 }
+
 
 .nav ul {
   display: flex;
@@ -58,9 +75,28 @@
 
 .nav a.current,
 .nav a:hover {
-  color: #c0392b;
+  color: #90A9B7;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition:.4s;
+}
+
+.primary__btn {
+  background-color: #F2BC18;
+  color: white;
   font-weight: bold;
 }
+
+.btn:hover{
+  background-color: #274653;
+  transition:.4s;
+}
+/* hero section with the photo in the back ground  */
 
 .hero {
   background-image: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80');
@@ -89,40 +125,114 @@
   z-index: -1;
 }
 
-.hero h1 {
-  font-size: 46px;
-  margin: -20px 0 20px;
+.hero__title {
+  font-size: 65px;
+
 }
 
 .hero p {
   font-size: 20px;
   letter-spacing: 1px;
 }
+/* Main content of the About page with article  */
 
-.content h2,
-.content h3 {
-  font-size: 150%;
-  margin: 20px 0;
+
+.content {
+  margin: 150px 0 ;}
+
+/* articles in the main content */
+
+
+
+.flexbox__article{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
 }
 
-.content p {
-  color: #555;
-  line-height: 30px;
-  letter-spacing: 1.2px;
+.right__block, .left__block {
+  max-width: 500px;
+  padding:25px;
 }
+
+.article__title{
+  font-size: 48px;
+  margin-bottom: 30px;
+  color:#274653;
+}
+
+.article__paragraph {
+  font-size: 16px;
+  color: #6D828E;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+/* CTA section */
+
+.CTA__section {
+  width: 100%;
+  background-color: #90A9B7;
+  padding: 150px;
+}
+
+.CTA__container {
+  margin: 0 auto;
+  max-width: 900px;
+  
+}
+
+.CTA__card {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTA__title {
+  font-size: 48px;
+  color:#274653;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.CTA__paragraph {
+  font-size: 18px;
+  color: #274653;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.btn__larger {
+  padding: 20px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+
+/* footer on the bottom with social media links */
 
 footer {
   display: flex;
   justify-content: center;
   padding: 115px;
-  background-color: #45a1ff;
+  background-color: #274653;
   color: #fff;
 }
 
-.social
-{
-  position: fixed;
-  z-index: 10;
+.info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__container div {
+  padding: 25px;
+}
+
+.social{
   bottom: 20px;
   display: flex;
   justify-content: center;
@@ -135,12 +245,29 @@ footer {
 .social li a
 {
   display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
+  padding: 15px;
   transform: scale(0.5);
   transition: 0.5s;
 }
 .social li a:hover
 {
   transform: scale(0.5) translateY(-15px);
+}
+
+
+
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact__card__title {
+  margin-bottom: 10px;
+}
+
+.contact__card p {
+  margin-bottom: 5px;
+  font-weight: 100;
 }
