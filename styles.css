@@ -184,7 +184,7 @@ header::before {
 .content {
   margin: 150px auto ;}
 
-/* articles in the main content */
+/* articles in the main content build with flexbox*/
 
 .flexbox__article{
   display: flex;
@@ -194,8 +194,11 @@ header::before {
 }
 
 .right__block, .left__block {
-  max-width: 500px;
   padding:25px;
+}
+
+.right__block{
+  margin-right: 100px;
 }
 
 .article__title{
