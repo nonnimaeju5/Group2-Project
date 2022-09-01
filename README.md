@@ -1,4 +1,3 @@
 # Demo Version of WeTravel
-Just testing and checking layout of our homepage and about page.
-We are still mising "Why Us" section.
-Just testing.
+Testing our demo version of WeTravel website.
+All sections and layouts are finished just missing photos and decisions on colors.
