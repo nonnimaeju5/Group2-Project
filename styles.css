@@ -311,9 +311,10 @@ footer {
   justify-content: center;
 }
 
-.info__container div {
-  padding: 25px;
+.logo__container {
+ margin-bottom: 25px; */
 }
+ 
 
 .social{
   bottom: 20px;
