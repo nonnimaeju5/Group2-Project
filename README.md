@@ -1,3 +1,4 @@
-# Demo Version of YouTravel
+# YouTravel Landing Page
 
-Implementing final dising. Testing the website.
+You travel is fictional website for solo travelers.
+Website was build for the 1st Group Projct in Vefskolinn course.
