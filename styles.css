@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-/* Basic fundamental properties and values set to the website */ 
+/* Basic fundamental properties and values set to the website */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
- font-family: 'Open Sans', sans-serif;
- color: #274653;
- letter-spacing: 0.2px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+  color: #274653;
+  letter-spacing: 0.2px;
 }
 
-p
-{ font-size: 16px;
-color: #778897}
+p {
+  font-size: 16px;
+  color: #778897;
+}
 
 /* main centered container block use  */
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
-/* Navigation bar with links inside  */ 
+/* Navigation bar with links inside  */
 
 .nav {
   position: absolute;
@@ -42,7 +46,6 @@ color: #778897}
   max-width: 175px;
 }
 
-
 .nav .container {
   display: flex;
   justify-content: space-between;
@@ -50,7 +53,6 @@ color: #778897}
   padding: 20px 0;
   transition: all 0.3s ease-in-out;
 }
-
 
 .nav ul {
   display: flex;
@@ -81,7 +83,7 @@ color: #778897}
 
 .nav a.current,
 .nav a:hover {
-  color: #90A9B7;
+  color: #90a9b7;
 }
 
 /* Button component stylings */
@@ -91,39 +93,38 @@ color: #778897}
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  transition:.4s;
+  transition: 0.1s;
   min-width: 105px;
 }
-.secondary__btn{
+.secondary__btn {
   background-color: transparent;
-  border:2px solid #F2BC18 ;
-  color:#F2BC18
+  border: 2px solid #f2bc18;
+  color: #f2bc18;
 }
 .primary__btn {
-  background-color: #F2BC18;
+  background-color: #f2bc18;
   color: white;
   font-weight: bold;
   padding: 18px 30px;
   font-size: 18px;
   border-radius: 30px;
   min-width: 125px;
- 
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #274653;
-  transition:.4s;
+  transition: 0.1s;
 }
 
-.secondary__btn:hover{
-  background-color: #F2BC18;
-  transition:.4s;
-  color:white;
+.secondary__btn:hover {
+  background-color: #f2bc18;
+  transition: 0.1s;
+  color: white;
 }
 
 /* hero section with the photo in the background  */
 
-header{
+header {
   background-image: url("././img/herophoto.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,17 +134,17 @@ header{
   position: relative;
   margin-bottom: 20px;
   z-index: 1;
+}
+
+.about__photo {
+  background-image: url("././img/heroabout.png");
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about__photo{
-  background-image: url("././img/heroabout.png");
-}
-
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -155,22 +156,23 @@ header::before {
 
 /* hero section with main title text */
 
-.hero__section{
+.hero__section {
   z-index: 2;
 }
 .hero__container {
   max-width: 750px;
+  padding-top: 250px;
+  margin-left: 15px;
 }
-
 
 .hero__title__homepage {
   font-size: 58px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   color: #fff;
   line-height: 70px;
 }
 
-.hero__paragraph{
+.hero__paragraph {
   margin-bottom: 50px;
   color: white;
   font-size: 18px;
@@ -182,98 +184,97 @@ header::before {
   color: white;
 }
 
-
 /* Main content of the About page with article  */
 
 .content {
-  margin: 150px auto ;}
+  margin: 150px auto;
+}
 
 /* articles in the main content build with flexbox*/
 
-.flexbox__article{
+.flexbox__article {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
 }
 
-.right__block, .left__block {
-  padding:25px;
+.right__block,
+.left__block {
+  padding: 25px;
 }
 
-.right__block{
+.right__block {
   margin-right: 100px;
 }
 
-.article__title{
+.article__title {
   font-size: 48px;
   margin-bottom: 30px;
-  color:#274653;
+  color: #274653;
 }
 
 .article__paragraph {
   font-size: 16px;
-  color: #6D828E;
+  color: #6d828e;
   line-height: 25px;
   letter-spacing: 1px;
   font-weight: normal;
 }
 
 /* why Us section */
-.why__section{
+.why__section {
   margin-bottom: 150px;
 }
-.why__section__title{
+.why__section__title {
   text-align: center;
   margin-bottom: 90px;
   font-size: 48px;
 }
-.flexbox__cards{
+.flexbox__cards {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
 }
 
-.benefit__card{
-  max-width:300px;
+.benefit__card {
+  max-width: 300px;
   padding: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2), 0 6px 20px 0 rgba(45, 45, 45, 0.19);
-
+  box-shadow: 0 4px 8px 0 rgba(68, 68, 68, 0.2),
+    0 6px 20px 0 rgba(45, 45, 45, 0.19);
 }
 
-.benefit__img{
+.benefit__img {
   max-width: 100px;
   margin-bottom: 20px;
 }
 
-.benefit__title{
-  margin-bottom:20px;
+.benefit__title {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.benefit__paragraph{
+.benefit__paragraph {
   text-align: center;
 }
-
 
 /* CTA section */
 
 .CTA__section {
   width: 100%;
-  background-color: #E2F5FF;
+  background-color: #e2f5ff;
   padding: 150px;
 }
 
 .CTA__container {
   margin: 0 auto;
   max-width: 900px;
-  
 }
 
 .CTA__card {
@@ -286,7 +287,7 @@ header::before {
 
 .CTA__title {
   font-size: 48px;
-  color:#274653;
+  color: #274653;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -297,7 +298,6 @@ header::before {
   margin-bottom: 50px;
   text-align: center;
 }
-
 
 /* footer on the bottom with company logo and social media links */
 
@@ -316,29 +316,25 @@ footer {
 }
 
 .logo__container {
- margin-bottom: 25px;
+  margin-bottom: 25px;
 }
- 
 
-.social{
+.social {
   bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social li
-{
+.social li {
   list-style: none;
 }
-.social li a
-{
+.social li a {
   display: inline-block;
   padding: 15px;
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover
-{
+.social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
 
